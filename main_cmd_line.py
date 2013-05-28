@@ -15,7 +15,7 @@ if __name__ == "__main__":
     
     parser.add_argument("-t", "--tmp", metavar = "DIR", default = "/tmp", help = "tmp dir that's used by the ardupilot makefile")
     parser.add_argument("-a", "--arg", metavar = "ARG", action = "append", required = True, help = "argument passed to the ardupilot makefile e.g.\"apm2-quad\"")
-    parser.add_argument("-c", "--cfg", metavar = "CFG", default = "Release", help = "eclipse configuration (e.g. \"Release\", \"Debug\")")
+    parser.add_argument("-c", "--cfg", metavar = "CFG", default = "Release", help = "eclipse configuration (default = Release) (e.g. \"Release\", \"Debug\")")
     
     g_link = parser.add_mutually_exclusive_group()
     g_link.add_argument("--no-link", action = "store_false", dest = "link", help = "copy ardupilot files into eclipse project")

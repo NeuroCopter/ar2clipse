@@ -69,6 +69,10 @@ C/C++ Build
 >>> Libraries > -l
 >>> * m
 
+correct some includes in AP_HAL_AVR
+-----------------------------------
+https://github.com/NeuroCopter/ardupilot/commit/a97fae179fa8b3482bf302a820d29d9ebfb8e4df
+
 copy / link files to eclipse project
 ------------------------------------
 * close the eclipse project / eclipse (since the project's config file is edited by the skript)

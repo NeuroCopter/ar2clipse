@@ -33,3 +33,13 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+
+# hidden file browser files
+.DS_Store
+.directory
+
+
+# generated test-output
+/example_files/out/
+/example_files/out.ArduCopter.cpp

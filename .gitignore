@@ -43,3 +43,6 @@ nosetests.xml
 # generated test-output
 /example_files/out/
 /example_files/out.ArduCopter.cpp
+
+# eclipse
+.settings/

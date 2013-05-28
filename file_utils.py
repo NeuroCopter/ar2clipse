@@ -116,3 +116,4 @@ class copyonly:
         
     def __call__(self, dirpath, files):
         return set(files) - set( shutil.ignore_patterns(*self._include_patterns)(dirpath, files) )
+    

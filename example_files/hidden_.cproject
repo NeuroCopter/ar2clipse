@@ -74,7 +74,7 @@
 								<option id="de.innot.avreclipse.compiler.option.debug.level.72323046" name="Generate Debugging Info" superClass="de.innot.avreclipse.compiler.option.debug.level" value="de.innot.avreclipse.compiler.option.debug.level.g2" valueType="enumerated" />
 								<option id="de.innot.avreclipse.compiler.option.optimize.531424647" name="Optimization Level" superClass="de.innot.avreclipse.compiler.option.optimize" value="de.innot.avreclipse.compiler.optimize.size" valueType="enumerated" />
 								<option id="de.innot.avreclipse.compiler.option.def.761532834" name="Define Syms (-D)" superClass="de.innot.avreclipse.compiler.option.def" valueType="definedSymbols">
-									<listOptionValue builtIn="false" value="SKETCH=\&quot;ArduCopter\&quot;" />
+									<listOptionValue builtIn="false" value="SKETCH=&quot;ArduCopter&quot;" />
 									<listOptionValue builtIn="false" value="FRAME_CONFIG=QUAD_FRAME" />
 									<listOptionValue builtIn="false" value="CONFIG_HAL_BOARD=HAL_BOARD_APM2" />
 								</option>
@@ -133,7 +133,7 @@
 								<option id="de.innot.avreclipse.cppcompiler.option.debug.level.1145051436" name="Generate Debugging Info" superClass="de.innot.avreclipse.cppcompiler.option.debug.level" value="de.innot.avreclipse.cppcompiler.option.debug.level.g2" valueType="enumerated" />
 								<option id="de.innot.avreclipse.cppcompiler.option.optimize.1641872019" name="Optimization Level" superClass="de.innot.avreclipse.cppcompiler.option.optimize" value="de.innot.avreclipse.cppcompiler.optimize.size" valueType="enumerated" />
 								<option id="de.innot.avreclipse.cppcompiler.option.def.1033797729" name="Define Syms (-D)" superClass="de.innot.avreclipse.cppcompiler.option.def" valueType="definedSymbols">
-									<listOptionValue builtIn="false" value="SKETCH=\&quot;ArduCopter\&quot;" />
+									<listOptionValue builtIn="false" value="SKETCH=&quot;ArduCopter&quot;" />
 									<listOptionValue builtIn="false" value="FRAME_CONFIG=QUAD_FRAME" />
 									<listOptionValue builtIn="false" value="CONFIG_HAL_BOARD=HAL_BOARD_APM2" />
 								</option>

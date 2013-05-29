@@ -155,14 +155,14 @@ class ardupilot_eclipse:
         """
 
 
-        eclipse_project_path = os.path.abspath( self._eclipse_project._project_path )
-        eclipse_lib_path     = os.path.abspath( os.path.join(eclipse_project_path, "libraries") )
-        eclipse_ardu_path    = os.path.abspath( os.path.join(eclipse_project_path, self._ardupilot_project._project_name) )
-        eclipse_big_cpp_path = os.path.abspath( os.path.join(eclipse_ardu_path, self._ardupilot_project._big_cpp_name) )
+        eclipse_project_path = self._eclipse_project._project_path
+        eclipse_lib_path     = os.path.join(eclipse_project_path, "libraries")
+        eclipse_ardu_path    = os.path.join(eclipse_project_path, self._ardupilot_project._project_name)
+        eclipse_big_cpp_path = os.path.join(eclipse_ardu_path, self._ardupilot_project._big_cpp_name)
         
         ardupilot_libraries_path = os.path.abspath( self._ardupilot_project._libraries_path )
         ardupilot_project_path   = os.path.abspath( self._ardupilot_project._project_path )
-        ardupilot_big_cpp_path   = os.path.abspath( self._ardupilot_project._big_cpp_path )
+        ardupilot_big_cpp_path   = self._ardupilot_project._big_cpp_path
     
         # delete libs
         if not file_utils.rm(eclipse_lib_path, ask): return

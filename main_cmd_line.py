@@ -5,6 +5,9 @@ if __name__ == "__main__":
 
     import argparse
     import ardupilot_2_eclipse
+    import tempfile
+    
+    TMP = tempfile.gettempdir()
     
     parser = argparse.ArgumentParser()
     
@@ -13,7 +16,7 @@ if __name__ == "__main__":
     parser.add_argument("ardupilot_path",    metavar = "ardupilot", help = "path of ardupilot directory that contains the sketches")
     parser.add_argument("ardupilot_project", metavar = "sketch",    help = "ardupilot sketch / project to be used e.g. \"ArduCopter\"")
     
-    parser.add_argument("-t", "--tmp", metavar = "DIR", default = "/tmp", help = "tmp dir that's used by the ardupilot makefile")
+    parser.add_argument("-t", "--tmp", metavar = "DIR", default = TMP, help = "tmp dir that's used by the ardupilot makefile (default = \"%s\")" %TMP)
     parser.add_argument("-a", "--arg", metavar = "ARG", action = "append", required = True, help = "argument passed to the ardupilot makefile e.g.\"apm2-quad\"")
     parser.add_argument("-c", "--cfg", metavar = "CFG", default = "Release", help = "eclipse configuration (default = Release) (e.g. \"Release\", \"Debug\")")
     

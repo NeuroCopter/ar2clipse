@@ -5,7 +5,8 @@ utilities to convert an ardupilot sketch to an eclipse project
 
 tested with
 -----------
-Ubuntu 13.04 Eclipse 4.2 CDT + AVR Plugin, amp2
+Ubuntu 13.04 Eclipse 4.2 CDT + AVR Plugin, apm2
+Mac OS X 10.7 Eclipse 4.2 CDT + AVR Plugin, apm2
 
 
 howto

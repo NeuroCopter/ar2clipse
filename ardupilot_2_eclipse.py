@@ -189,10 +189,11 @@ class ardupilot_eclipse:
         if dont_include_pde:
             if not file_utils.copyfile(ardupilot_big_cpp_path, eclipse_big_cpp_path, ask): return
         else:
-            if not file_utils.get_confirmation('genereate "%s"?' %eclipse_big_cpp_path, ask): return
+            if not file_utils.get_confirmation('generate "%s"?' %eclipse_big_cpp_path, ask): return
             self._ardupilot_project._big_cpp_file.build_main_cpp(eclipse_big_cpp_path)
             # rename *.pde to *.pde.hpp
             for f in os.listdir(eclipse_ardu_path):
                 if f.endswith(".pde"):
                     fp = os.path.join(eclipse_ardu_path, f)
                     os.rename(fp, fp + ".hpp")
+        print "Done :)"

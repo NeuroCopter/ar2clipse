@@ -84,7 +84,7 @@ class cproject_xml:
     def create_unique_id_num(self):
         """
         some nodes in a .cproject file have "id"-attributes of which some end in an integer.
-        This function return an integer differs from all of them.
+        This function return an integer that differs from all of them.
         @rtype: integer
         """
         return self.get_id_nums()[-1] + 1
@@ -178,7 +178,7 @@ class cproject_xml:
         def get_excludes(self):
             """
             @rtype: list of strings
-            @requires: list of directories that are exluded from this configuration's build ("exclude from build ...") 
+            @return: list of directories that are exluded from this configuration's build ("exclude from build ...") 
             """
             entry_node = self.get_excluding_entry_node(False)
             if entry_node is None:

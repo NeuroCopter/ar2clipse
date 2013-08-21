@@ -19,7 +19,7 @@ class cproject_xml:
 
     def write_back(self):
         """
-        writes all changed made to this object back to the .cproject file.
+        writes all changes made to this object back to the .cproject file.
         """
         def indent(node, level):
             ind = '\n' + level * '\t'

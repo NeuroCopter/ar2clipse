@@ -39,6 +39,8 @@ C/C++ Build
 >>> Symbols
 >>> * e.g. SKETCH="ArduCopter", FRAME_CONFIG=QUAD_FRAME, CONFIG_HAL_BOARD=HAL_BOARD_APM2
 
+If you use the makefile for building the project, the following configurations can be skipped. (although the flags are pretty much the same as in the makefile, the sizes of the generated binaries differ.)
+
 >>> Warnings:
 >>> * -Wall
 
@@ -78,3 +80,5 @@ copy / link files to eclipse project
 * run the skript
 
 > * e.g. python main_cmd_line.py ~/workspace ArduCopter ~/git/ardupilot ArduCopter -a=apm2-quad
+
+* reopen the project, refresh & rebuild the index

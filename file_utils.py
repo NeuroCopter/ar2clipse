@@ -105,7 +105,7 @@ def linkfile(src, link_name, ask = True):
 
 class copyonly:
     """
-    inverts the behaviour of ignore pattern: only files that the pettern matches are copied
+    inverts the behaviour of ignore pattern: only files that the pattern matches are copied
     @see: http://docs.python.org/2/library/shutil.html#shutil.ignore_patterns
     """
     def __init__(self, include_patterns):

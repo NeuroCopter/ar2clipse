@@ -100,12 +100,14 @@ _(although the flags are pretty much the same as in the makefile, the sizes of t
 
 ### sym-link ArduPilotMega files into the local project ###
 
->>> _This step has to be executed whenever one of the following occurs:_  
->>>>  * ArduPilotMega project is updated from external source (git)
->>>>  * using a priorly unused library
->>>>  * if .pde files are altered in a way, that results in a change to the auto-generated big .cpp file (e.g. new functions are added)   
-
-
+------------
+_These steps have to be executed whenever one of the following occurs:_  
+* ArduPilotMega project is updated from external source (git)
+* using a priorly unused library
+* if .pde files are altered in a way, that results in a change to the auto-generated big .cpp file (e.g. new functions are added)   
+   
+------------   
+   
 * close the eclipse project (since the project's config file is edited by the script)
 * run the script
 
@@ -126,6 +128,5 @@ We've created an eclipse workspace that contains 3 projects:
 * All work is done on the local project. because of the symlinks, all changes are actually performed on the ArduPilotMega files. (except for the generated ArduCopter.cpp file)
 * Therefore the changes can be commited right away via the ArduPilotMega project in eclipse (or through the git tool of your choice).
 * whenever we update the ArduPilotMega project (pull / fetch), we refresh the local project by running the script as described above.
- 
-* 
+
  

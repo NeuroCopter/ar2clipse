@@ -47,10 +47,6 @@ Mac OSX 10.7  Eclipse 4.2 CDT + AVR Plugin, apm2
 
 __C/C++ Build__
 > Settings [Tool Settings]
->> AVR Assembler
->>> Debugging
->>> * -g2
->>> * operating system default
 
 >> AVR Compiler
 >>> Symbols
@@ -63,6 +59,12 @@ __C/C++ Build__
 __If you use eclipse just for editing the code (and use the ardupilot-makefile for building), the following steps (setting compiler flags) can be skipped.__
 _(although the flags are pretty much the same as in the makefile, the sizes of the generated binaries differ.)_
 
+>> AVR Assembler
+>>> Debugging
+>>> * -g2
+>>> * operating system default
+
+>> AVR Compiler
 >>> Warnings:
 >>> * -Wall
 

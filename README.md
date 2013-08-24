@@ -55,6 +55,8 @@ __C/C++ Build__
 >>>> SKETCH="ArduCopter"  
 >>>> FRAME_CONFIG=QUAD_FRAME  
 >>>> CONFIG_HAL_BOARD=HAL_BOARD_APM2  
+  
+>> AVR C++ Compiler ( _same settings as for AVR Compiler_ )  
 
 __If you use eclipse just for editing the code (and use the ardupilot-makefile for building), the following steps (setting compiler flags) can be skipped.__
 _(although the flags are pretty much the same as in the makefile, the sizes of the generated binaries differ.)_

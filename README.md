@@ -1,6 +1,10 @@
 # ar2clipse #
 
-Utilities to convert an ardupilot sketch to an eclipse project
+Utilities to convert an ardupilot sketch to an eclipse project.
+
+ar2clipse is "non-invasive":
+* .pde.hpp softlinks are created for every .pde file and included in an auto-generated .cpp file  
+* edit your git repository through the softlinks without changing it's initial structure.
 
 
 ## tested on ##
